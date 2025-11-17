@@ -1,71 +1,193 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Cloud Tech Enthusiasts</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      padding: 50px;
-      background-color: #f0f8ff; /* Alice Blue */
-      color: #333;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    h1 {
-      color: #2e8b57; /* Sea Green */
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-    h2 {
-      color: #4682b4; /* Steel Blue */
-      font-size: 1.8em;
-      margin-top: 30px;
-    }
-    p {
-      font-size: 1.1em;
-      margin-bottom: 15px;
-    }
-    .intro-image {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-bottom: 20px;
-        border: 3px solid #2e8b57;
-    }
-    .footer {
-        margin-top: 40px;
-        font-size: 0.9em;
-        color: #777;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Tech | Our Cloud Learning Journey</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <img src="AWS.png" alt="Cloud Tech" class="intro-image">
-    <h1>Hello World of Cloud Tech!</h1>
-    
-    <p>Hi, this is Mohsin and Karthik! We are incredibly interested in cloud technology and are super excited to dive deep into AWS.</p>
-    
-    <p>We believe the cloud is the future, offering incredible scalability, flexibility, and innovation possibilities. From serverless computing to robust data storage, we're eager to learn and build amazing things.</p>
-    
-    <h2>Our Journey Begins</h2>
-    <p>This simple page marks the beginning of our cloud adventure. We're starting with easy projects, like this static website hosted on Amazon S3, to build a strong foundation.</p>
-    <p>Stay tuned as we explore more services, tackle new challenges, and share our learnings along the way. The sky's the limit when it comes to the cloud!</p>
-    
-    <p>Thanks for visiting our very first AWS-hosted page!</p>
+    <!-- 1. Navigation Bar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#home" class="logo">Cloud Tech</a>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#journey">Our Journey</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li>
+                        <div class="theme-switch-wrapper">
+                            <i class="fas fa-sun"></i>
+                            <label class="theme-switch" for="theme-toggle"><input type="checkbox" id="theme-toggle" /><span class="slider"></span></label>
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </li>
+                </ul>
+                <button class="hamburger" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
 
-    <div class="footer">
-        <p>&copy; 2023 Mohsin & Karthik. All rights reserved.</p>
-    </div>
-  </div>
+    <main>
+        <!-- 2. Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content animate-on-load">
+                    <h1>Hello World of Cloud Tech!</h1>
+                    <p>Two passionate technology enthusiasts on a mission to master the cloud, one AWS service at a time.</p>
+                    <a href="#journey" class="btn btn-primary">Explore Our Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. About Us Section -->
+        <section id="about" class="about-section section-padding animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Who We Are</h2>
+                <p class="section-subtitle">We are Mohsin and Karthik, two technology enthusiasts dedicated to exploring the vast potential of cloud computing. We believe the cloud is the engine of modern innovation, offering unparalleled scalability and flexibility, and we are excited to build our skills on this powerful platform.</p>
+                <div class="team-members">
+                    <div class="team-member">
+                        <i class="fas fa-user-astronaut member-icon"></i>
+                        <h3>Mohsin</h3>
+                        <p>Cloud Explorer</p>
+                    </div>
+                    <div class="team-member">
+                        <i class="fas fa-user-cog member-icon"></i>
+                        <h3>Karthik</h3>
+                        <p>Tech Architect</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Our Journey Section -->
+        <section id="journey" class="journey-section section-padding animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Our Journey Begins</h2>
+                <p class="section-subtitle">This website marks the first milestone in our cloud adventure. We are starting with foundational projects, like hosting this static website on Amazon S3, to build our expertise from the ground up. Follow along as we explore new AWS services, tackle complex challenges, and share our learnings with the community.</p>
+                <div class="timeline">
+                    <div class="timeline-item animate-timeline">
+                        <div class="timeline-icon"><i class="fas fa-flag-checkered"></i></div>
+                        <div class="timeline-content">
+                            <h3>Phase 1: Foundation</h3>
+                            <p>Deploying a static website on Amazon S3 and configuring it for public access. This is where it all starts!</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-timeline">
+                        <div class="timeline-icon"><i class="fas fa-server"></i></div>
+                        <div class="timeline-content">
+                            <h3>Phase 2: Serverless</h3>
+                            <p>Building a dynamic backend with AWS Lambda and API Gateway to power features like our contact form.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item animate-timeline">
+                        <div class="timeline-icon"><i class="fas fa-database"></i></div>
+                        <div class="timeline-content">
+                            <h3>Phase 3: Data & Storage</h3>
+                            <p>Exploring data persistence with services like Amazon DynamoDB and managing files with S3 storage classes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Projects Section -->
+        <section id="projects" class="projects-section section-padding animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/a1c4fd/ffffff?text=AI+TTS+Generator');"></div>
+                        <div class="project-content">
+                            <span class="badge">Coming Soon</span>
+                            <h3>AI Text-to-Speech Generator</h3>
+                            <p>An application that converts text into lifelike speech using Amazon Polly.</p>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/a1c4fd/ffffff?text=Project+2');"></div>
+                        <div class="project-content">
+                            <span class="badge">Coming Soon</span>
+                            <h3>CI/CD Pipeline for Automation</h3>
+                            <p>Automating our deployment process using AWS CodePipeline and CodeBuild.</p>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <div class="project-image" style="background-image: url('https://via.placeholder.com/400x250/a1c4fd/ffffff?text=Project+3');"></div>
+                        <div class="project-content">
+                            <span class="badge">Coming Soon</span>
+                            <h3>Dynamic Photo Gallery</h3>
+                            <p>An image gallery that uses S3 for storage and Lambda for image processing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Us Section -->
+        <section id="contact" class="contact-section section-padding animate-on-scroll">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <p>Have a question or want to collaborate? We'd love to hear from you.</p>
+                        <p><i class="fas fa-envelope"></i> contact@cloudtech.com</p>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject">
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p id="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 7. Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+            <p>&copy; 2025 Mohsin & Karthik. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <a href="#home" class="scroll-to-top" aria-label="Scroll to top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="script.js"></script>
 </body>
 </html>
