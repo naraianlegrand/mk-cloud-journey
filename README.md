@@ -1,7 +1,5 @@
 # Cloud Tech - A Modern, Responsive Website
 
-![Cloud Tech Website Screenshot](https://via.placeholder.com/800x450/a1c4fd/2c3e50?text=Cloud+Tech+Website)
-
 A beautiful, modern, and fully responsive website built to document a learning journey into cloud technologies, specifically AWS. This project serves as a portfolio and a blog, showcasing skills and progress through various cloud-based projects.
 
 ---
